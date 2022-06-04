@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="137.50565mm"
+   height="108.50517mm"
+   viewBox="0 0 137.50565 108.50517"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="5.svg"
+   inkscape:version="1.1.2 (08b2f3d93c, 2022-04-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.45784171"
+     inkscape:cx="-314.51918"
+     inkscape:cy="-22.93369"
+     inkscape:window-width="3792"
+     inkscape:window-height="1016"
+     inkscape:window-x="48"
+     inkscape:window-y="1467"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-66.529228,-50.196968)">
+    <rect
+       style="fill:#808080;fill-rule:evenodd;stroke-width:0.264583"
+       id="rect31"
+       width="137.50565"
+       height="1.5067685"
+       x="66.529228"
+       y="54.279961" />
+    <rect
+       style="fill:#808080;fill-rule:evenodd;stroke-width:0.264583"
+       id="rect31-6"
+       width="137.50565"
+       height="1.5067685"
+       x="66.529228"
+       y="102.90968" />
+    <rect
+       style="fill:#808080;fill-rule:evenodd;stroke-width:0.264583"
+       id="rect31-6-7"
+       width="137.50565"
+       height="1.5067685"
+       x="66.529228"
+       y="151.53941" />
+    <circle
+       style="opacity:0.8;fill:#800000;stroke-width:0.264583"
+       id="path247"
+       cx="135.28204"
+       cy="104.44955"
+       r="8.302515" />
+  </g>
+</svg>

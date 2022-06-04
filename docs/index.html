@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <title>Mandarin Tones</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Mandarin Tones</h1>
+    <p>中国語の二字の単語を声調の組み合わせによって分類します。</p>
+  </div>
+  <div class="container">
+    <h2>単語リスト</h2>
+    <p>単語は空白・カンマ・改行のいずれかで区切って入力してください。入力した内容は外部に送信されません。</p>
+    <textarea id="word-list-input" rows="5"></textarea>
+    <h2>表示する字体</h2>
+    <p>表示する字体を選択してください。自動で変換されるため、入力リストの内容と異なっていてもよいです。</p>
+    <div>
+      <input type="radio" name="character-set" value="simplified" checked="checked"><label for="simplified">簡体字</label>
+    </div>
+    <div>
+      <input type="radio" name="character-set" value="traditional"><label for="traditional">繁体字</label>
+    </div>
+    <button id="exec-button" type="button" onclick="e()">分類する</button>
+  </div>
+
+  <div id="failed" class="container hidden">
+    <h2>分類に失敗した単語</h2>
+    <p id="failed-description"></p>
+    <div id="failed-words" class="container"></div>
+  </div>
+  <div id="table" class="container hidden">
+    <h2>声調によって分類した表</h2>
+    <p>セルをクリックすると詳細情報が表示されます。</p>
+    <table>
+      <tr>
+        <th id="c00" class="table-leftmost-cell"></th>
+        <th id="c01">1</th>
+        <th id="c02">2</th>
+        <th id="c03">3</th>
+        <th id="c04">4</th>
+        <th id="c05">軽</th>
+      </tr>
+      <tr>
+        <th id="c10" class="table-leftmost-cell">1</th>
+        <td onclick="s(1,1)" id="c11" class="table-word-cell"></td>
+        <td onclick="s(1,2)" id="c12" class="table-word-cell"></td>
+        <td onclick="s(1,3)" id="c13" class="table-word-cell"></td>
+        <td onclick="s(1,4)" id="c14" class="table-word-cell"></td>
+        <td onclick="s(1,5)" id="c15" class="table-word-cell"></td>
+      </tr>
+      <tr>
+        <th id="c20" class="table-leftmost-cell">2</th>
+        <td onclick="s(2,1)" id="c21" class="table-word-cell"></td>
+        <td onclick="s(2,2)" id="c22" class="table-word-cell"></td>
+        <td onclick="s(2,3)" id="c23" class="table-word-cell"></td>
+        <td onclick="s(2,4)" id="c24" class="table-word-cell"></td>
+        <td onclick="s(2,5)" id="c25" class="table-word-cell"></td>
+      </tr>
+      <tr>
+        <th id="c30" class="table-leftmost-cell">3</th>
+        <td onclick="s(3,1)" id="c31" class="table-word-cell"></td>
+        <td onclick="s(3,2)" id="c32" class="table-word-cell"></td>
+        <td onclick="s(3,3)" id="c33" class="table-word-cell"></td>
+        <td onclick="s(3,4)" id="c34" class="table-word-cell"></td>
+        <td onclick="s(3,5)" id="c35" class="table-word-cell"></td>
+      </tr>
+      <tr>
+        <th id="c40" class="table-leftmost-cell">4</th>
+        <td onclick="s(4,1)" id="c41" class="table-word-cell"></td>
+        <td onclick="s(4,2)" id="c42" class="table-word-cell"></td>
+        <td onclick="s(4,3)" id="c43" class="table-word-cell"></td>
+        <td onclick="s(4,4)" id="c44" class="table-word-cell"></td>
+        <td onclick="s(4,5)" id="c45" class="table-word-cell"></td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="detail" class="container hidden">
+    <div style="height: 125px;">
+      <h2 id="tones"></h2>
+      <div id="pictures">
+        <img id="img1">
+        <img id="img2">
+      </div>
+      <div id="pinyin"></div>
+    </div>
+  </div>
+
+  <footer class="container">
+    This application uses <a href="https://cantonese.org/"><q>CC-CEDICT</q></a> by MDBG, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+  </footer>
+  <script src='main.js'></script>
+</body>
+
+</html>
